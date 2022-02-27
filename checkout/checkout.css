@@ -1,0 +1,63 @@
+html {
+    max-width: 1660px;
+    width: 100%;
+}
+
+h1 {
+    font: bold 3em arial, sans-serif;
+}
+
+h2 {
+    font: bold 2em arial, sans-serif;
+}
+
+h3 {
+    font: bold 1.5em arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 3rem 3rem 3rem 3rem;
+    background-color: #E3E3E3;
+}
+
+.header__h1 {
+    padding: 1rem 3rem 0.5rem 3rem;
+}
+
+.header__p {
+    padding: 0.5rem 3rem 1rem 3rem;
+}
+
+
+/* ------------------------------------- */
+
+.main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.main__section--compra {
+    display: flex;
+    flex-direction: column;
+    max-width: 330px;
+    background-color: aqua;
+}
+
+.main__section--form__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 662px;
+    padding: 15px 15px 15px 15px;
+    background-color: red;
+}
+
+.main__section--form__form>div {
+    display: flex;
+    flex-direction: row;
+    background-color: goldenrod;
+}
