@@ -1,9 +1,12 @@
 function totalCalculator(qntd, undValue) {
-
     const strUndValue = undValue.split(" ")[1].replace(",", ".");
 
     const undValuePart = parseFloat(strUndValue);
     const qntdNumber = Number(qntd);
 
-    document.querySelector('#total').innerHTML = "R$" + (qntdNumber * undValuePart).toFixed(2);
+    let result = "R$" + (qntdNumber * undValuePart).toFixed(2);
+
+    result = result.replace(".", ",");
+
+    document.querySelector('#total').innerHTML = result;
 }
