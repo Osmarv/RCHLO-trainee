@@ -59,17 +59,17 @@
                         <legend>Dados Pessoais</legend>
                         <div>
                             <label for="name" class="main__section--form__form__div__label">Nome Completo</label>
-                            <input class="main__section--form__form__div__input" type="text" id="name" name="name" maxlength="200" placeholder="Ex: seu nome" oninvalid="validationScript(this, 'O nome é obrigatório!' )" oninput="this.setCustomValidity('')" required>
+                            <input class="main__section--form__form__div__input" type="text" id="name" name="name" maxlength="200" placeholder="Ex: seu nome" oninvalid="validationScript(this, 'O nome é obrigatório!' )" oninput="unvalidaterScript(this)" required>
                         </div>
 
                         <div>
                             <label for="email" class="main__section--form__form__div__label">Email</label>
-                            <input type="email" id="email" name="email" class="main__section--form__form__div__input" maxlength="300" placeholder="Ex: seunome@email.com" oninvalid="validationScript(this, 'O e-mail é obrigatório!' )" oninput="this.setCustomValidity('')" required>
+                            <input type="email" id="email" name="email" class="main__section--form__form__div__input" maxlength="300" placeholder="Ex: seunome@email.com" oninvalid="validationScript(this, 'O e-mail é obrigatório!' )" oninput="unvalidaterScript(this)" required>
                         </div>
 
                         <div>
                             <label for="cpf" class="main__section--form__form__div__label">CPF</label>
-                            <input type="text" id="cpf" name="cpf" class="main__section--form__form__div__input" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" maxlength="14" placeholder="Ex: 999.999.999-99" oninvalid="validationScript(this, 'O cpf é obrigatório!' )" oninput="this.setCustomValidity('')"
+                            <input type="text" id="cpf" name="cpf" class="main__section--form__form__div__input" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" maxlength="14" placeholder="Ex: 999.999.999-99" oninvalid="validationScript(this, 'O cpf é obrigatório!' )" oninput="unvalidaterScript(this)"
                                 required>
                         </div>
 
@@ -83,12 +83,12 @@
                         <legend>Cartão de Crédito</legend>
                         <div>
                             <label for="cvv" class="main__section--form__form__div__label">Número - CVV</label>
-                            <input type="number" id="cvv" name="cvv" class="main__section--form__form__div__input" placeholder="Ex: 999" maxlength="3" maxlength="3" oninvalid="validationScript(this, 'O código CVV é obrigatório!' )" oninput="this.setCustomValidity('')" required>
+                            <input type="number" id="cvv" name="cvv" class="main__section--form__form__div__input" placeholder="Ex: 999" maxlength="3" maxlength="3" oninvalid="validationScript(this, 'O código CVV é obrigatório!' )" oninput="unvalidaterScript(this)" required>
                         </div>
 
                         <div>
                             <label for="bandeira" class="main__section--form__form__div__label">Bandeira</label>
-                            <select name="bandeira" id="bandeira" class="main__section--form__form__div__input" oninvalid="validationScript(this, 'A bandeira do cartão é obrigatória!' )" oninput="this.setCustomValidity('')" required>
+                            <select name="bandeira" id="bandeira" class="main__section--form__form__div__input" oninvalid="validationScript(this, 'A bandeira do cartão é obrigatória!' )" oninput="unvalidaterScript(this)" required>
                                 <option value="" disabled selected>Selecione uma opção</option>
                                 <option value="MASTER">MASTER</option>
                                 <option value="VISA">VISA</option>
@@ -98,7 +98,7 @@
 
                         <div>
                             <label for="validade" class="main__section--form__form__div__label">Validade</label>
-                            <input type="date" placeholder="--------- ----" id="validade" name="validade" class="main__section--form__form__div__input" oninvalid="validationScript(this, 'A validade é obrigatória' )" oninput="this.setCustomValidity('')" required>
+                            <input type="date" placeholder="--------- ----" id="validade" name="validade" class="main__section--form__form__div__input" oninvalid="validationScript(this, 'A validade é obrigatória' )" oninput="unvalidaterScript(this)" required>
                         </div>
 
                     </fieldset>
